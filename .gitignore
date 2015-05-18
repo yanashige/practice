@@ -1,0 +1,10 @@
+public class Mesoddo{
+	public static void main(String[] args){
+		A();
+		B();
+	}
+ public static void A() {
+ System.out.println(" ");
+ 
+ }
+ }
