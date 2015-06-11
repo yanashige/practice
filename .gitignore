@@ -1,10 +1,27 @@
-public class Mesoddo{
-	public static void main(String[] args){
-		A();
-		B();
-	}
- public static void A() {
- System.out.println(" ");
- 
- }
- }
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+class Hello{
+
+    public static void main(String args[]){
+        try{
+            File file = new File("D:\\test.txt");
+            FileReader filereader = new FileReader(file);
+
+            int ch;
+            while((ch = filereader.read()) != -1){
+                System.out.print((char)ch);
+            }
+
+            filereader.close();
+        }catch(FileNotFoundException e){
+            System.out.println(e);
+        }catch(IOException e){
+            System.out.println(e);
+        }
+    }
+}
+
